@@ -49,6 +49,7 @@ public class WebConfig {
 
                 }, "/exampleServlet2/*");
         bean.setLoadOnStartup(2);
+        // le name doit être différent entre les servlet, sinon, un seul est créée
         bean.setName("toto0");
         return bean;
     }
